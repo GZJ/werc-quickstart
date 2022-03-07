@@ -1,0 +1,22 @@
+Werc quick start
+
+1. download werc && install plan9 tools
+hg clone https://code.9front.org/hg/werc/
+apt install 9base
+
+2. copy example site
+cd ./werc/sites
+cp -r werc.cat-v.org localhost
+
+3. change shebang path
+file: ./werc/bin/werc.rc 
+#!/usr/bin/plan9/bin/rc
+file: ./werc/bin/contrib/md2html.awk
+#!/usr/bin/awk
+
+4. start cgi server
+go run server.go 
+#go run server.go --root "./werc" --sites "sites" --addr ":8000"
+
+5. access http://locahost:8000
+lynx http://localhost:8000
