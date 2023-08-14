@@ -1,4 +1,7 @@
-Werc quick start
+What is werc?
+Werc is a minimalist web anti-framework built following the Unix and Plan 9 tool philosophy of software design. (https://werc.cat-v.org/)
+
+Quick start
 
 1. download werc && install plan9 tools
 hg clone https://code.9front.org/hg/werc/
